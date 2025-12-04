@@ -1,2 +1,2 @@
-# vim_setup
+# Vim Setup
 My Vim configuration.

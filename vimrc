@@ -1,4 +1,6 @@
+"--------------------------------------------------------
 " Basic settings
+"--------------------------------------------------------
 set number
 set relativenumber
 set nowrap
@@ -46,7 +48,10 @@ Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 call plug#end()
 
-" Colorscheme
+" -------------------------------------------------------
+"     COLOR SCHEME
+"--------------------------------------------------------
+
 set background=dark
 let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
@@ -89,13 +94,16 @@ let g:lightline = {
       \ },
       \ }
       
-" Shortcuts
+" -------------------------------------------------------
+" SHORTCUTS
+"--------------------------------------------------------
+
 " Toggle NERDTree
 nnoremap <C-b> :NERDTreeToggle<CR>
 inoremap <C-b> <Esc>:NERDTreeToggle<CR>a
 vnoremap <C-b> <Esc>:NERDTreeToggle<CR>gv
 
-" fzf
+" fzf --------------------------------
 nnoremap <C-p> :Files<CR>
 inoremap <C-p> <Esc>:Files<CR>a
 vnoremap <C-p> <Esc>:Files<CR>gv
@@ -111,6 +119,8 @@ vnoremap <C-l> <Esc>:Lines<CR>gv
 nnoremap <C-f> :Rg<Space>
 inoremap <C-f> <Esc>:Rg<Space>a
 vnoremap <C-f> <Esc>:Rg<Space>gv
+
+" General Keybindings ----------------
 
 " Close buffer / window
 nnoremap <C-w> :q<CR>

@@ -45,6 +45,14 @@ Open the `.vimrc` file using and run
 ```
 
 # Shortcut for VIM
+## General Keybindings Cheat Sheet
+
+| Key | Action | Notes |
+|-----|--------|-------|
+| `<C-s>` | Save file | Write changes to disk |
+| `<C-w>` | Quit Vim | Close the current Vim session |
+| `<C-z>` | undo | Revert the last change |
+| `<C-y>` | redo | Reapply the last undone change |
 
 ## NERDTree Keybindings Cheat Sheet
 

@@ -1,6 +1,7 @@
 # Vim Setup
 My Vim configuration.
 
+![Example](/assets/image.png "Vim Example")
 ### Plug-in used
 - **NERDTree** : used for moving between files thanks to a sidebar similar to VSCode.
 - **fzf**: used for searcing between files and within files.

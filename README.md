@@ -39,3 +39,27 @@ Open the `.vimrc` file using and run
 ```
 :PlugInstall
 ```
+
+# Shortcut for VIM
+
+## NERDTree Keybindings Cheat Sheet
+
+| Key | Action | Notes |
+|-----|--------|-------|
+| `<C-b>` | Toggle file sidebar | Open/close NERDTree |
+| `o` (on file) | Open file | Opens in the current window |
+| `t` (on file) | Open in new tab | Creates a new tab with the file |
+| `i` (on file) | Open in vertical split | Opens file in vertical split |
+| `s` (on file) | Open in horizontal split | Opens file in horizontal split |
+| `o` (on folder) | Expand/Collapse folder | Shows or hides folder content |
+| `O` (on folder) | Expand all recursively | Opens all subfolders and files recursively |
+| `x` (on folder) | Close folder | Closes the folder without collapsing children |
+
+## fzf.vim Keybindings Cheat Sheet
+
+| Key | Command | Description |
+|-----|---------|-------------|
+| `<C-p>` | `:Files` | Open fuzzy finder to search and open files in the project |
+| `<C-u>` | `:Buffers` | Search and switch between open buffers |
+| `<C-l>` | `:Lines` | Search for lines in the current file |
+| `<C-f>` | `:Rg` | Fuzzy search text in the entire project using ripgrep |

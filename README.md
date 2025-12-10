@@ -7,7 +7,10 @@ My Vim configuration.
 - **gruvbox**: theme for better UI.
 
 ## Configuration  
-Copy the content of the `vimrc` file in your `.vimrc` file in the home directory (create the file if missing). 
+Copy the content of the `vimrc` file in your `.vimrc` file in the home directory (create the file if missing). Use command `cp` for a fast copy:
+```
+cp vimrc ~/.vimrc
+```
 
 ### 1. Install *vim-plug*
 ```

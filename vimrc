@@ -16,7 +16,7 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set clipboard=unnamed
-
+set clipboard=unnamedplus
 " Indentation
 set autoindent
 set smartindent
@@ -90,8 +90,39 @@ let g:lightline = {
       \ }
       
 " Shortcuts
+" Toggle NERDTree
 nnoremap <C-b> :NERDTreeToggle<CR>
+inoremap <C-b> <Esc>:NERDTreeToggle<CR>a
+vnoremap <C-b> <Esc>:NERDTreeToggle<CR>gv
+
+" fzf
 nnoremap <C-p> :Files<CR>
+inoremap <C-p> <Esc>:Files<CR>a
+vnoremap <C-p> <Esc>:Files<CR>gv
+
 nnoremap <C-u> :Buffers<CR>
+inoremap <C-u> <Esc>:Buffers<CR>a
+vnoremap <C-u> <Esc>:Buffers<CR>gv
+
 nnoremap <C-l> :Lines<CR>
+inoremap <C-l> <Esc>:Lines<CR>a
+vnoremap <C-l> <Esc>:Lines<CR>gv
+
 nnoremap <C-f> :Rg<Space>
+inoremap <C-f> <Esc>:Rg<Space>a
+vnoremap <C-f> <Esc>:Rg<Space>gv
+
+" Close buffer / window
+nnoremap <C-w> :q<CR>
+inoremap <C-w> <Esc>:q<CR>
+vnoremap <C-w> <Esc>:q<CR>
+
+" Save file
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <Esc>:w<CR>a
+vnoremap <C-s> <Esc>:w<CR>gv
+
+" Undo
+nnoremap <C-z> u
+inoremap <C-z> <Esc>u
+vnoremap <C-z> u

@@ -1,6 +1,4 @@
-"--------------------------------------------------------
 " Basic settings
-"--------------------------------------------------------
 set number
 set relativenumber
 set nowrap
@@ -46,64 +44,58 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
+Plug 'tomasiser/vim-code-dark'
 call plug#end()
 
-" -------------------------------------------------------
-"     COLOR SCHEME
-"--------------------------------------------------------
-
+" Colorscheme
 set background=dark
-let g:gruvbox_contrast_dark='hard'
-colorscheme gruvbox
+colorscheme codedark
 
 " Lightline setup
 
-set noshowmode
-set laststatus=2
-
-let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ }
-
-" Personalizzazione colori per la modalità
-let g:lightline.mode_map = {
-      \ 'normal': 'NORMAL',
-      \ 'insert': 'INSERT',
-      \ 'visual': 'VISUAL',
-      \ 'replace': 'REPLACE',
-      \ 'command': 'COMMAND'
-      \ }
-
-let g:lightline.mode_colors = {
-      \ 'normal': 'blue',
-      \ 'insert': 'green',
-      \ 'visual': 'purple',
-      \ 'replace': 'red',
-      \ 'command': 'orange'
-      \ }
+"set noshowmode
+"set laststatus=2
+"
+"let g:lightline = {
+"      \ 'colorscheme': 'gruvbox',
+"      \ 'active': {
+"      \   'left': [ [ 'mode', 'paste' ],
+"      \             [ 'readonly', 'filename', 'modified' ] ]
+"      \ },
+"      \ }
+"
+"" Personalizzazione colori per la modalità
+"let g:lightline.mode_map = {
+"      \ 'normal': 'NORMAL',
+"      \ 'insert': 'INSERT',
+"      \ 'visual': 'VISUAL',
+"      \ 'replace': 'REPLACE',
+"      \ 'command': 'COMMAND'
+"      \ }
+"
+"let g:lightline.mode_colors = {
+"      \ 'normal': 'blue',
+"      \ 'insert': 'green',
+"      \ 'visual': 'purple',
+"      \ 'replace': 'red',
+"      \ 'command': 'orange'
+"      \ }
+"      
+"let g:lightline = {
+"      \ 'colorscheme': 'gruvbox',
+"      \ 'active': {
+"      \   'left': [ [ 'mode', 'paste' ],
+"      \             [ 'readonly', 'filename', 'modified' ] ]
+"      \ },
+"      \ }
       
-let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ }
-      
-" -------------------------------------------------------
-" SHORTCUTS
-"--------------------------------------------------------
-
+" Shortcuts
 " Toggle NERDTree
 nnoremap <C-b> :NERDTreeToggle<CR>
 inoremap <C-b> <Esc>:NERDTreeToggle<CR>a
 vnoremap <C-b> <Esc>:NERDTreeToggle<CR>gv
 
-" fzf --------------------------------
+" fzf
 nnoremap <C-p> :Files<CR>
 inoremap <C-p> <Esc>:Files<CR>a
 vnoremap <C-p> <Esc>:Files<CR>gv
@@ -119,8 +111,6 @@ vnoremap <C-l> <Esc>:Lines<CR>gv
 nnoremap <C-f> :Rg<Space>
 inoremap <C-f> <Esc>:Rg<Space>a
 vnoremap <C-f> <Esc>:Rg<Space>gv
-
-" General Keybindings ----------------
 
 " Close buffer / window
 nnoremap <C-w> :q<CR>

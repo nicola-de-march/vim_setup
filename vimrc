@@ -48,7 +48,9 @@ Plug 'tomasiser/vim-code-dark'
 call plug#end()
 
 " Colorscheme
+set termguicolors
 set background=dark
+let g:codedark_conservative = 0
 colorscheme codedark
 
 " Lightline setup

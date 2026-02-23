@@ -128,3 +128,9 @@ vnoremap <C-s> <Esc>:w<CR>gv
 nnoremap <C-z> u
 inoremap <C-z> <Esc>u
 vnoremap <C-z> u
+
+" Moving between windows with Ctrl + Arrow keys
+nnoremap <C-Left>  :wincmd h<CR>
+nnoremap <C-Down>  :wincmd j<CR>
+nnoremap <C-Up>    :wincmd k<CR>
+nnoremap <C-Right> :wincmd l<CR>
